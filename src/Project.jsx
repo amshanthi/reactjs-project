@@ -20,19 +20,16 @@ export default function Project() {
   }
   return (
     <div className="container-fluid">
-      {/* -fluid */}
-      {/* <h1 className="text-danger text-center">My Projects</h1>
-      <hr /> */}
-      <h1>Nav Link</h1>
-      <div className="row">
-        <div className="col-3 bg-secondary p-3" style={{ minHeight: "100vh" }}>
-          <h4 className="text-light mb-3 text-center">Mini projects</h4>
-
+      <div className="">
+        {/* <div className="d-flex flex-column justify-content-center align-items-center bg-secondary">
+          <h1>Nav Link</h1>
+        </div> */}
+        <div className=" d-flex flex-row justify-content-start">
           {Object.keys(Component).map((key) => (
             <button
               disabled={current === key}
               id={key}
-              className="btn btn-primary w-100 p-2 mb-2 w-25"
+              className="btn btn-primary m-2"
               key={key}
               onClick={(e) => setCurrent(key)}
             >
@@ -40,8 +37,7 @@ export default function Project() {
             </button>
           ))}
         </div>
-
-        <div className="col-9">
+        <div className="">
           <div className=" ">{Component[current]}</div>
         </div>
       </div>
