@@ -16,7 +16,7 @@ export default function CounterApp() {
     return state;
   }
   return (
-    <div className="container">
+    <div className="container-fluid">
       <h2 className="d-flex flex-row border justify-content-center align-content-center border-2 p-2 ">
         <p className="fw-bold  ">Stock available:</p>
         {state.stockCount - state.count === 0 ? (
